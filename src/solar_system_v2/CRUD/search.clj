@@ -25,9 +25,6 @@
          :where [_ :planet/name ?name]
          [_ :planet/id ?id]] (d/db compo/conn)))
 
-;  (search-by-name  "Earth" 9.98)
-(get-all)
-(get-name "Venus")
 
 
 
