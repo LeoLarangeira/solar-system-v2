@@ -1,0 +1,337 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd /home/leonardo/Desktop/solar-system-v2 ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +dev repl :headless ; popd
+; Using host:port 127.0.0.1:35945 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+nil
+; SLF4J: Failed to load class "org.slf4j.impl.StaticMDCBinder".
+; SLF4J: Defaulting to no-operation MDCAdapter implementation.
+; SLF4J: See http://www.slf4j.org/codes.html#no_static_mdc_binder for further details.
+clj꞉solar-system-v2.components.datomic꞉> 
+#'solar-system-v2.components.datomic/db-uri
+clj꞉solar-system-v2.components.datomic꞉> 
+#'solar-system-v2.components.datomic/schema
+clj꞉solar-system-v2.components.datomic꞉> 
+true
+; SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+; SLF4J: Defaulting to no-operation (NOP) logger implementation
+; SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+clj꞉solar-system-v2.components.datomic꞉> 
+#'solar-system-v2.components.datomic/conn
+clj꞉solar-system-v2.components.datomic꞉> 
+#<promise$settable_future$reify__1005@35726e62: 
+  {:db-before datomic.db.Db@f5147bc7,
+   :db-after datomic.db.Db@c7660b44,
+   :tx-data
+   [#datom[13194139534312 50 #inst "2023-11-07T13:02:21.310-00:00" 13194139534312 true] #datom[72 10 :planet/id 13194139534312 true] #datom[72 40 56 13194139534312 true] #datom[72 42 38 13194139534312 true] #datom[72 41 35 13194139534312 true] #datom[73 10 :planet/name 13194139534312 true] #datom[73 40 23 13194139534312 true] #datom[73 41 35 13194139534312 true] #datom[74 10 :planet/diameter 13194139534312 true] #datom[74 40 57 13194139534312 true] #datom[74 41 35 13194139534312 true] #datom[75 10 :planet/mass 13194139534312 true] #datom[75 40 57 13194139534312 true] #datom[75 41 35 13194139534312 true] #datom[76 10 :planet/gravity 13194139534312 true] #datom[76 40 57 13194139534312 true] #datom[76 41 35 13194139534312 true] #datom[0 13 72 13194139534312 true] #datom[0 13 73 13194139534312 true] #datom[0 13 74 13194139534312 true] #datom[0 13 75 13194139534312 true] #datom[0 13 76 13194139534312 true]],
+   :tempids
+   {-9223301668109598134 72,
+    -9223301668109598133 73,
+    -9223301668109598132 74,
+    -9223301668109598131 75,
+    -9223301668109598130 76}}>
+clj꞉solar-system-v2.components.datomic꞉> 
+; Syntax error compiling at (insert.clj:11:1).
+; Unable to resolve symbol: defn in this context
+clj꞉solar-system-v2.CRUD.insert꞉> 
+nil
+clj꞉solar-system-v2.CRUD.insert꞉> 
+#'solar-system-v2.CRUD.insert/insert-planets
+clj꞉solar-system-v2.CRUD.insert꞉> 
+#<promise$settable_future$reify__1005@66d55748: 
+  {:db-before datomic.db.Db@c7660b44,
+   :db-after datomic.db.Db@35518dde,
+   :tx-data
+   [#datom[13194139534313 50 #inst "2023-11-07T13:02:35.564-00:00" 13194139534313 true] #datom[17592186045418 72 #uuid "28ca4921-dbc1-44cb-b2c8-6c384b49e4b6" 13194139534313 true] #datom[17592186045418 73 "Earth" 13194139534313 true] #datom[17592186045418 74 12742.2 13194139534313 true] #datom[17592186045418 75 5.24 13194139534313 true] #datom[17592186045418 76 9.81 13194139534313 true]],
+   :tempids {-9223350046623220303 17592186045418}}>
+clj꞉solar-system-v2.CRUD.insert꞉> 
+#<promise$settable_future$reify__1005@40047d9c: 
+  {:db-before datomic.db.Db@35518dde,
+   :db-after datomic.db.Db@4d1257ec,
+   :tx-data
+   [#datom[13194139534315 50 #inst "2023-11-07T13:02:36.954-00:00" 13194139534315 true] #datom[17592186045420 72 #uuid "e4c93dd4-2fc4-4557-b41c-2d31ce455ea9" 13194139534315 true] #datom[17592186045420 73 "Mercury" 13194139534315 true] #datom[17592186045420 74 4880.0 13194139534315 true] #datom[17592186045420 75 3.3 13194139534315 true] #datom[17592186045420 76 3.7 13194139534315 true]],
+   :tempids {-9223350046623220304 17592186045420}}>
+clj꞉solar-system-v2.CRUD.insert꞉> 
+#<promise$settable_future$reify__1005@7ecc471: 
+  {:db-before datomic.db.Db@4d1257ec,
+   :db-after datomic.db.Db@65a68a0,
+   :tx-data
+   [#datom[13194139534317 50 #inst "2023-11-07T13:02:37.714-00:00" 13194139534317 true] #datom[17592186045422 72 #uuid "2290fbdd-00f7-4db7-8bd0-4d250f8b3287" 13194139534317 true] #datom[17592186045422 73 "Venus" 13194139534317 true] #datom[17592186045422 74 12104.0 13194139534317 true] #datom[17592186045422 75 4.9 13194139534317 true] #datom[17592186045422 76 8.87 13194139534317 true]],
+   :tempids {-9223350046623220305 17592186045422}}>
+clj꞉solar-system-v2.CRUD.insert꞉> 
+#<promise$settable_future$reify__1005@619533ee: 
+  {:db-before datomic.db.Db@65a68a0,
+   :db-after datomic.db.Db@eabc2e37,
+   :tx-data
+   [#datom[13194139534319 50 #inst "2023-11-07T13:02:38.457-00:00" 13194139534319 true] #datom[17592186045424 72 #uuid "f40610a2-5a0c-4b77-a84b-a228525529b1" 13194139534319 true] #datom[17592186045424 73 "Mars" 13194139534319 true] #datom[17592186045424 74 6779.0 13194139534319 true] #datom[17592186045424 75 6.42 13194139534319 true] #datom[17592186045424 76 3.71 13194139534319 true]],
+   :tempids {-9223350046623220306 17592186045424}}>
+clj꞉solar-system-v2.CRUD.insert꞉> 
+#'solar-system-v2.CRUD.search/search
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/get-all-planets
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-by-gravity
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Syntax error compiling at (search.clj:16:1).
+; Unable to resolve symbol: defn in this context
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Syntax error compiling at (search.clj:16:1).
+; Unable to resolve symbol: defn in this context
+clj꞉solar-system-v2.CRUD.search꞉> 
+nil
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-by-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+#{["Mars"] ["Earth"] ["Venus"] ["Mercury"]}
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Syntax error compiling at (search.clj:31:1).
+; Unable to resolve symbol: search-gravity in this context
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Syntax error compiling at (search.clj:31:1).
+; Unable to resolve symbol: get-all in this context
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.handler/get-all-planets
+clj꞉solar-system-v2.handler꞉> 
+; Syntax error compiling at (search.clj:31:1).
+; Unable to resolve symbol: get-all in this context
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/serch-map
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-map
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-by-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (IllegalArgumentException) at datomic.query/has-self-unifications?$fn (query.clj:523).
+; Don't know how to create ISeq from: clojure.lang.Symbol
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-map
+clj꞉solar-system-v2.CRUD.search꞉> 
+{:find [?e], :in [$ ?name], :where [?e :planet/name ?name]}
+clj꞉solar-system-v2.CRUD.search꞉> 
+
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Syntax error compiling at (search.clj:40:1).
+; Unable to resolve symbol: get-all in this context
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (IllegalArgumentException) at datomic.query/has-self-unifications?$fn (query.clj:523).
+; Don't know how to create ISeq from: clojure.lang.Symbol
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-query
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-by-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/too-few-inputs Query expected 2 inputs but received 1
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-query
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-by-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+#{[17592186045418] [17592186045420] [17592186045422] [17592186045424]}
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-query
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-by-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/unbound-query-variables Query is referencing unbound variables: #{?gravity}
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-query
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-by-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/unbound-query-variables Query is referencing unbound variables: #{?mass ?diameter ?gravity}
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-query
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-by-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/too-few-inputs Query expected 5 inputs but received 1
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/unbound-query-variables Query is referencing unbound variables: #{?name}
+clj꞉solar-system-v2.CRUD.search꞉> 
+#{}
+clj꞉solar-system-v2.CRUD.search꞉> 
+#{[17592186045418 9.81] [17592186045418 3.7] [17592186045418 8.87] [17592186045418 3.71]}
+clj꞉solar-system-v2.CRUD.search꞉> 
+#{[17592186045418 17592186045418]}
+clj꞉solar-system-v2.CRUD.search꞉> 
+[:find ?name :where [?name :planet/name "Earth"]]
+clj꞉solar-system-v2.CRUD.search꞉> 
+#{[17592186045418]}
+clj꞉solar-system-v2.CRUD.search꞉> 
+#{[17592186045418]}
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-map
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-by-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-query
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/unbound-query-variables Query is referencing unbound variables: #{?grvity}
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-query
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-by-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/too-few-inputs Query expected 3 inputs but received 2
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-query
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-by-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/invalid-data-source Nil or missing data source. Did you forget to pass a database argument?
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-by-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/invalid-data-source Nil or missing data source. Did you forget to pass a database argument?
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-by-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/too-few-inputs Query expected 3 inputs but received 1
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-by-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/invalid-data-source Nil or missing data source. Did you forget to pass a database argument?
+clj꞉solar-system-v2.CRUD.search꞉> 
+datomic.db.Db@eabc2e37
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-by-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/invalid-data-source Nil or missing data source. Did you forget to pass a database argument?
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/db
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/search-by-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/db
+clj꞉solar-system-v2.CRUD.search꞉> 
+datomic.db.Db@eabc2e37
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/invalid-data-source Nil or missing data source. Did you forget to pass a database argument?
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/get-all-planets
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/get-all
+clj꞉solar-system-v2.CRUD.search꞉> 
+#{}
+clj꞉solar-system-v2.CRUD.search꞉> 
+datomic.db.Db@eabc2e37
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (ClassCastException) at solar-system-v2.CRUD.search/eval8227 (form-init13488559056238675666.clj:34).
+; class datomic.peer.LocalConnection cannot be cast to class clojure.lang.IFn (datomic.peer.LocalConnection and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (ClassCastException) at solar-system-v2.CRUD.search/eval8229 (form-init13488559056238675666.clj:34).
+; class datomic.peer.LocalConnection cannot be cast to class clojure.lang.IFn (datomic.peer.LocalConnection and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/get-all-planets
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/get-all
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/unbound-query-variables Query is referencing unbound variables: #{?e}
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/get-all-planets
+clj꞉solar-system-v2.CRUD.search꞉> 
+#{["Mars"] ["Earth"] ["Venus"] ["Mercury"]}
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/get-all-planets
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/get-all
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/unbound-query-variables Query is referencing unbound variables: #{?id}
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/get-all-planets
+clj꞉solar-system-v2.CRUD.search꞉> 
+#{["Mars" #uuid "28ca4921-dbc1-44cb-b2c8-6c384b49e4b6"] ["Venus" #uuid "28ca4921-dbc1-44cb-b2c8-6c384b49e4b6"] ["Mars" #uuid "f40610a2-5a0c-4b77-a84b-a228525529b1"] ["Venus" #uuid "e4c93dd4-2fc4-4557-b41c-2d31ce455ea9"] ["Venus" #uuid "f40610a2-5a0c-4b77-a84b-a228525529b1"] ["Mercury" #uuid "2290fbdd-00f7-4db7-8bd0-4d250f8b3287"] ["Earth" #uuid "e4c93dd4-2fc4-4557-b41c-2d31ce455ea9"] ["Venus" #uuid "2290fbdd-00f7-4db7-8bd0-4d250f8b3287"] ["Mercury" #uuid "f40610a2-5a0c-4b77-a84b-a228525529b1"] ["Earth" #uuid "28ca4921-dbc1-44cb-b2c8-6c384b49e4b6"] ["Mars" #uuid "2290fbdd-00f7-4db7-8bd0-4d250f8b3287"] ["Earth" #uuid "2290fbdd-00f7-4db7-8bd0-4d250f8b3287"] ["Mars" #uuid "e4c93dd4-2fc4-4557-b41c-2d31ce455ea9"] ["Earth" #uuid "f40610a2-5a0c-4b77-a84b-a228525529b1"] ["Mercury" #uuid "28ca4921-dbc1-44cb-b2c8-6c384b49e4b6"] ["Mercury" #uuid "e4c93dd4-2fc4-4557-b41c-2d31ce455ea9"]}
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/get-all
+clj꞉solar-system-v2.CRUD.search꞉> 
+#{["Mars" #uuid "28ca4921-dbc1-44cb-b2c8-6c384b49e4b6"] ["Venus" #uuid "28ca4921-dbc1-44cb-b2c8-6c384b49e4b6"] ["Mars" #uuid "f40610a2-5a0c-4b77-a84b-a228525529b1"] ["Venus" #uuid "e4c93dd4-2fc4-4557-b41c-2d31ce455ea9"] ["Venus" #uuid "f40610a2-5a0c-4b77-a84b-a228525529b1"] ["Mercury" #uuid "2290fbdd-00f7-4db7-8bd0-4d250f8b3287"] ["Earth" #uuid "e4c93dd4-2fc4-4557-b41c-2d31ce455ea9"] ["Venus" #uuid "2290fbdd-00f7-4db7-8bd0-4d250f8b3287"] ["Mercury" #uuid "f40610a2-5a0c-4b77-a84b-a228525529b1"] ["Earth" #uuid "28ca4921-dbc1-44cb-b2c8-6c384b49e4b6"] ["Mars" #uuid "2290fbdd-00f7-4db7-8bd0-4d250f8b3287"] ["Earth" #uuid "2290fbdd-00f7-4db7-8bd0-4d250f8b3287"] ["Mars" #uuid "e4c93dd4-2fc4-4557-b41c-2d31ce455ea9"] ["Earth" #uuid "f40610a2-5a0c-4b77-a84b-a228525529b1"] ["Mercury" #uuid "28ca4921-dbc1-44cb-b2c8-6c384b49e4b6"] ["Mercury" #uuid "e4c93dd4-2fc4-4557-b41c-2d31ce455ea9"]}
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/get-all-planets
+clj꞉solar-system-v2.CRUD.search꞉> 
+[[4 #uuid "e4c93dd4-2fc4-4557-b41c-2d31ce455ea9"]
+ [4 #uuid "f40610a2-5a0c-4b77-a84b-a228525529b1"]
+ [4 #uuid "2290fbdd-00f7-4db7-8bd0-4d250f8b3287"]
+ [4 #uuid "28ca4921-dbc1-44cb-b2c8-6c384b49e4b6"]]
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/get-all
+clj꞉solar-system-v2.CRUD.search꞉> 
+[[4 #uuid "e4c93dd4-2fc4-4557-b41c-2d31ce455ea9"]
+ [4 #uuid "f40610a2-5a0c-4b77-a84b-a228525529b1"]
+ [4 #uuid "2290fbdd-00f7-4db7-8bd0-4d250f8b3287"]
+ [4 #uuid "28ca4921-dbc1-44cb-b2c8-6c384b49e4b6"]]
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/get-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/invalid-data-source Nil or missing data source. Did you forget to pass a database argument?
+clj꞉solar-system-v2.CRUD.search꞉> 
+datomic.db.Db@eabc2e37
+clj꞉solar-system-v2.CRUD.search꞉> 
+#function[clojure.core/name]
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/get-name
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:79).
+; :db.error/invalid-data-source Nil or missing data source. Did you forget to pass a database argument?
+clj꞉solar-system-v2.CRUD.search꞉> 
+[[4 #uuid "e4c93dd4-2fc4-4557-b41c-2d31ce455ea9"]
+ [4 #uuid "f40610a2-5a0c-4b77-a84b-a228525529b1"]
+ [4 #uuid "2290fbdd-00f7-4db7-8bd0-4d250f8b3287"]
+ [4 #uuid "28ca4921-dbc1-44cb-b2c8-6c384b49e4b6"]]
+clj꞉solar-system-v2.CRUD.search꞉> 
+#{[17592186045418]}
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/conn
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/get-all
+clj꞉solar-system-v2.CRUD.search꞉> 
+; Execution error (NullPointerException) at datomic.api/db (api.clj:73).
+; Cannot invoke "datomic.Connection.db()" because "connection" is null
+clj꞉solar-system-v2.CRUD.search꞉> 
+#'solar-system-v2.CRUD.search/get-all
+clj꞉solar-system-v2.CRUD.search꞉> 
+[[4 #uuid "e4c93dd4-2fc4-4557-b41c-2d31ce455ea9"]
+ [4 #uuid "f40610a2-5a0c-4b77-a84b-a228525529b1"]
+ [4 #uuid "2290fbdd-00f7-4db7-8bd0-4d250f8b3287"]
+ [4 #uuid "28ca4921-dbc1-44cb-b2c8-6c384b49e4b6"]]
+clj꞉solar-system-v2.CRUD.search꞉> 
