@@ -22,3 +22,9 @@
 
 (d/transact conn schema)
 
+(defn get-pika [name]
+  (d/q '[:find ?id
+         :in $ ?name
+         :where [?id :planet/name ?name]] (d/db conn) name))
+(println conn)
+(get-pika "Earth")
