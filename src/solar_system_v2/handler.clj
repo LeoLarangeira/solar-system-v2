@@ -11,7 +11,7 @@
   (GET "/planets/:name" [name] "<h1> Catapimbas </h1>"
     (search/get-pika-map name)
     )
-  (POST "/planets" [] "Planeta gerado com sucesso!" 
+  (POST "/planets" [] "Planeta gerado com sucesso! Vamos que vamos!" 
     (insert/insert-planets)
     )
   (PUT "/planets" [] "PUT"
