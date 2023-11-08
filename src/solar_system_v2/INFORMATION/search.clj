@@ -1,7 +1,6 @@
-(ns solar-system-v2.CRUD.search
+(ns solar-system-v2.INFORMATION.search
   (:require [datomic.api :as d]
-            [solar-system-v2.components.datomic :as compo]
-            [ring.adapter.jetty :as jetty]
+            [solar-system-v2.components.datomic :as compo] 
             [cheshire.core :refer :all]))
 
 (def conn (d/db compo/conn))
@@ -29,7 +28,7 @@
 
 ;(search-by-name  "Earth" 9.98)
 (d/q get-all-planets conn)
-(d/q get-all-planets-names conn)
+(def first-name (first (d/q get-all-planets-names conn)))
 (d/q get-all-planets-gravity conn)
 
 
@@ -41,20 +40,22 @@
 
 
 ;isso aqui retorna todos os dados, fazendo a busca pelo nome!
-(defn get-pika-map [name]
-  (let [planet (d/q '{:find [(pull ?id [*])]
+(defn get-pika-map [name] 
+  (let [planet (-> @(d/q '{:find [(pull ?id [*])]
                       :in [$ ?name]
-                      :where [[?id :planet/name ?name]]} conn name)
+                      :where [[?id :planet/name ?name]]} conn name))
         generated-string (generate-string planet)
+        _ (println planet)
         ]
-    (println planet)
+    (println name)
     (println generated-string)
     {:status 200
      :headers  {"Content-Type" "application/json; charset=utf-8"}
      :body generated-string}))
-(generate-string (get-pika-map "NCNF-18"))
 
-;i
+(get-pika "IECM-7")
+
+
 
 
 ;infelizmente esse aqui não esta funcionando, mas é para ser isso aqui:
@@ -64,7 +65,7 @@
          :where [(fulltext $ :planet/name ?name) [[?name ?tx ?mass]]]]
        conn name))
 
-(get-tx "NCNF-18")
+;(get-tx "NCNF-18")
 
 
 

@@ -6,8 +6,7 @@
                  [compojure "1.6.1"]
                  [ring/ring-defaults "0.3.2"]
                  [com.datomic/peer "1.0.7021"]
-                 [cheshire "5.12.0"]
-                 [ring/ring-jetty-adapter "1.9.6"]]
+                 [cheshire "5.12.0"]]
   
   :plugins [[lein-ring "0.12.5"]]
   :ring {:handler solar-system-v2.handler/app}
