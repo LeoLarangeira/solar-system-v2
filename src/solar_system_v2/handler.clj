@@ -2,16 +2,17 @@
   (:require [compojure.core :refer :all]
             [compojure.route :as route]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
-            [solar-system-v2.CRUD.search :as search])
+            [solar-system-v2.CRUD.search :as search]
+            [solar-system-v2.CRUD.insert :as insert])
             )
 
 (defroutes app-routes
   (GET "/" [] "Hello World")
-  (GET "/planets" [] "<h1> Catapimbas </h1>"
-    ;(search/get-all-planets)
+  (GET "/planets/:name" [name] "<h1> Catapimbas </h1>"
+    (search/get-pika-map name)
     )
-  (POST "/planets" [] "POST"
-    ;aqui vai uma função create/planet
+  (POST "/planets" [] "Planeta gerado com sucesso! Vamos que vamos!" 
+    (insert/insert-planets)
     )
   (PUT "/planets" [] "PUT"
     ;aqui vai uma função up/planet
